@@ -1,0 +1,3 @@
+# Preserve exact delivered bytes so provenance and manifest hashes survive clones.
+* -text
+*.joblib binary

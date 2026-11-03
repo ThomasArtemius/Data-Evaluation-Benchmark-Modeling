@@ -1,0 +1,245 @@
+{
+  "format_version": 1,
+  "brief_id": "e4f3fffcb35cdb8faa58b5bc",
+  "excludes": [
+    "MANIFEST.json itself"
+  ],
+  "file_count_excluding_manifest": 33,
+  "total_bytes_excluding_manifest": 3692090,
+  "potential_review_text_bytes": 85797,
+  "reviewer_input_tokens": null,
+  "note": "Text bytes describe files available to inspect, not actual model context or token usage.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "role": "documentation",
+      "bytes": 107,
+      "lines": 3,
+      "sha256": "025b780104731e81b04ecde42f108fce753a2c6a427699e5f314f595f2907ba8"
+    },
+    {
+      "path": ".gitignore",
+      "role": "documentation",
+      "bytes": 321,
+      "lines": 22,
+      "sha256": "6c02110d861effe0b0aec3caf8dde1c1a0a98a58e4aba65566ee319c750f6c58"
+    },
+    {
+      "path": "AUTHOR_VERIFICATION.json",
+      "role": "verification",
+      "bytes": 2835,
+      "lines": 68,
+      "sha256": "df281ace5eba21a2874f5c3a972975d030eef5ee7c47d3970bf1923ad0cbe51a"
+    },
+    {
+      "path": "benchflow/__init__.py",
+      "role": "source",
+      "bytes": 91,
+      "lines": 3,
+      "sha256": "95064e9d4aef1acb77228704f529615fc1304a2caec6581e5ada9441218cf5eb"
+    },
+    {
+      "path": "benchflow/__main__.py",
+      "role": "source",
+      "bytes": 2045,
+      "lines": 42,
+      "sha256": "eb32bbde06c3820cdd8f6d7504982513221952ad3e2857d53278c9df2f156587"
+    },
+    {
+      "path": "benchflow/data.py",
+      "role": "source",
+      "bytes": 6458,
+      "lines": 141,
+      "sha256": "42752fd03a0a995750dbd086c7705645f5e74660e2bd69d68f9c51e03d37f0dd"
+    },
+    {
+      "path": "benchflow/models.py",
+      "role": "source",
+      "bytes": 2205,
+      "lines": 45,
+      "sha256": "9d0d161cd215da0f44819f38673e4afb8af129574e196f055c7ff66502e5d36c"
+    },
+    {
+      "path": "benchflow/runner.py",
+      "role": "source",
+      "bytes": 12602,
+      "lines": 237,
+      "sha256": "54881c2b3aa33e373eb8a2b378c40b33e24a0490fa0a4c43739864c2afbb9d79"
+    },
+    {
+      "path": "BRIEF.md",
+      "role": "documentation",
+      "bytes": 2464,
+      "lines": 30,
+      "sha256": "8b8e196a8c3410950dd224c327567f38e3f69d983df9996a6dcf5826e07153cc"
+    },
+    {
+      "path": "data/abalone.csv",
+      "role": "dataset",
+      "bytes": 250447,
+      "lines": 4178,
+      "sha256": "3a1d1de79a15eb96a94045403c1fa4ff186fe128ab0b92d7f1cb04f8184ad5a1"
+    },
+    {
+      "path": "data/provenance.json",
+      "role": "dataset",
+      "bytes": 2220,
+      "lines": 57,
+      "sha256": "dbc4bfd608fd36f4da3309af2f4595e4ff2680da1ac291c9501fe3f66038860c"
+    },
+    {
+      "path": "data/wine.csv",
+      "role": "dataset",
+      "bytes": 12909,
+      "lines": 179,
+      "sha256": "37bd5405ab7376ceaccac7f0727e883a262c4f2e525fb4ee351fdbe269aa0e7e"
+    },
+    {
+      "path": "prepare_data.py",
+      "role": "source",
+      "bytes": 3735,
+      "lines": 71,
+      "sha256": "fcedca3ba1637a3edd597a5087378e7501627c9b8d35f96ce8cebeeb88c5ef07"
+    },
+    {
+      "path": "README.md",
+      "role": "documentation",
+      "bytes": 9757,
+      "lines": 103,
+      "sha256": "f99d88947ace5517a59349ca865754e958c29089234f5957a5720e3b69a46b76"
+    },
+    {
+      "path": "REPORT.md",
+      "role": "documentation",
+      "bytes": 4545,
+      "lines": 44,
+      "sha256": "29615788d0cffd90fb3b23bafea666971c5bcacebb637b67def9d7964c5f6247"
+    },
+    {
+      "path": "requirements.txt",
+      "role": "documentation",
+      "bytes": 110,
+      "lines": 7,
+      "sha256": "5f89dd1957ec4edfc5ba0dad38866914b7f9effaa87b15d9b9ee0b31b8613a73"
+    },
+    {
+      "path": "results/abalone/comparison.csv",
+      "role": "verification",
+      "bytes": 684,
+      "lines": 4,
+      "sha256": "29b228548a1e36813c9b7042b77a87cdce9c7771807198e707d8e565af4df6d7"
+    },
+    {
+      "path": "results/abalone/holdout_input.csv",
+      "role": "verification",
+      "bytes": 49005,
+      "lines": 837,
+      "sha256": "79a34f39f50fd317a533de0590ffe09050d50193a27f2754c0964b7117fd6559"
+    },
+    {
+      "path": "results/abalone/holdout_predictions.csv",
+      "role": "verification",
+      "bytes": 31553,
+      "lines": 837,
+      "sha256": "245ff93f90a38365e100d7aa1912dc8c78344242efea545aab00c5ce2edd72f6"
+    },
+    {
+      "path": "results/abalone/metrics.json",
+      "role": "verification",
+      "bytes": 5822,
+      "lines": 220,
+      "sha256": "e2735346e38e6c762a133a93db4dcf358c584f07020decb742a7f29a819b3df7"
+    },
+    {
+      "path": "results/abalone/model.joblib",
+      "role": "model",
+      "bytes": 3139162,
+      "lines": null,
+      "sha256": "4d000af01eb0faed1c5a7f849ecc01bf30b2fa1b70aabda9d09e342011c1f426"
+    },
+    {
+      "path": "results/abalone/splits.csv",
+      "role": "verification",
+      "bytes": 108973,
+      "lines": 4178,
+      "sha256": "da696ca9f88cea74176671ea97319b53488b869368312f32cda40b2cae4ca1dc"
+    },
+    {
+      "path": "results/abalone/summary.md",
+      "role": "verification",
+      "bytes": 1050,
+      "lines": 16,
+      "sha256": "47fbf59f402718245a5dd52060fcc3108ad0a6db310461e604242a6ffcc790e9"
+    },
+    {
+      "path": "results/wine/comparison.csv",
+      "role": "verification",
+      "bytes": 1128,
+      "lines": 4,
+      "sha256": "3306ea74a61f59c27def9ee6e1d1aca827cc846082b7ab6b63d1729a16561f99"
+    },
+    {
+      "path": "results/wine/holdout_input.csv",
+      "role": "verification",
+      "bytes": 2694,
+      "lines": 37,
+      "sha256": "ef8b7e8d9a58cd03bd3011a62e82df09020f45f2b4dd24f066f7b44e016af444"
+    },
+    {
+      "path": "results/wine/holdout_predictions.csv",
+      "role": "verification",
+      "bytes": 2865,
+      "lines": 37,
+      "sha256": "a48da5271140e0b70b800e6a94a20ecd5418b5101da8ef6f14def2568baca03e"
+    },
+    {
+      "path": "results/wine/metrics.json",
+      "role": "verification",
+      "bytes": 9384,
+      "lines": 396,
+      "sha256": "fea2fbb79fa9667c1e423e1c1c78339186eba6a04be2f94f4037c45aaca3b307"
+    },
+    {
+      "path": "results/wine/model.joblib",
+      "role": "model",
+      "bytes": 2558,
+      "lines": null,
+      "sha256": "42c15c9df1b8f9b51cc9042dbfd7beafbbdd627c959768681a6ffa554716c674"
+    },
+    {
+      "path": "results/wine/splits.csv",
+      "role": "verification",
+      "bytes": 3887,
+      "lines": 179,
+      "sha256": "a2c3ca6ec3e14d50f562c4f75478aaef2be35ef4bb2a9084d6765382ee065719"
+    },
+    {
+      "path": "results/wine/summary.md",
+      "role": "verification",
+      "bytes": 1070,
+      "lines": 16,
+      "sha256": "d3780e92988461ef1de968e6bcaceb36c13529bb6c5ac4f02c764a89c8707f45"
+    },
+    {
+      "path": "REVIEW_HANDOFF.md",
+      "role": "documentation",
+      "bytes": 4431,
+      "lines": 54,
+      "sha256": "1a5357509e91e227ff79169346dc3cd1e7e50923543bcd45af574581cd5b8166"
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "role": "tests",
+      "bytes": 9889,
+      "lines": 213,
+      "sha256": "8e05de7f9fbda01f297a13a1ddc34c34fb36fc0ac4c75d0984e89d0eb5877a7c"
+    },
+    {
+      "path": "verify_submission.py",
+      "role": "source",
+      "bytes": 5084,
+      "lines": 83,
+      "sha256": "eebdb2619ad96a2f61946d827470e07bb6900efd860d7aa0bd6c03678f20c150"
+    }
+  ]
+}

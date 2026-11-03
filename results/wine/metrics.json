@@ -1,0 +1,396 @@
+{
+  "started_utc": "2026-11-03T07:41:51.488708+00:00",
+  "finished_utc": "2026-11-03T07:41:52.140926+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "device": "CPU",
+    "threads": 1,
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "input_sha256": "37bd5405ab7376ceaccac7f0727e883a262c4f2e525fb4ee351fdbe269aa0e7e",
+  "input_filename": "wine.csv",
+  "rows": 178,
+  "schema": {
+    "features": [
+      "alcohol",
+      "malic_acid",
+      "ash",
+      "alcalinity_of_ash",
+      "magnesium",
+      "total_phenols",
+      "flavanoids",
+      "nonflavanoid_phenols",
+      "proanthocyanins",
+      "color_intensity",
+      "hue",
+      "od280_od315",
+      "proline"
+    ],
+    "numeric": [
+      "alcohol",
+      "malic_acid",
+      "ash",
+      "alcalinity_of_ash",
+      "magnesium",
+      "total_phenols",
+      "flavanoids",
+      "nonflavanoid_phenols",
+      "proanthocyanins",
+      "color_intensity",
+      "hue",
+      "od280_od315",
+      "proline"
+    ],
+    "categorical": [],
+    "target": "cultivar",
+    "id_column": "row_id"
+  },
+  "task": "classification",
+  "seed": 42,
+  "split_counts": {
+    "train": 106,
+    "validation": 36,
+    "test": 36
+  },
+  "selected_model": "logistic_regression",
+  "selection": {
+    "split": "validation",
+    "metric": "f1_macro",
+    "direction": "maximize",
+    "tie_break": "candidate registry order; simpler baseline first",
+    "refit_after_selection": false
+  },
+  "probability_columns": {
+    "probability_0": "1",
+    "probability_1": "2",
+    "probability_2": "3"
+  },
+  "missing_feature_values": 0,
+  "models": {
+    "dummy_prior": {
+      "fit_seconds": 0.004852399986702949,
+      "estimator_parameters": {
+        "constant": null,
+        "random_state": null,
+        "strategy": "prior"
+      },
+      "fit_warnings": [],
+      "validation": {
+        "accuracy": 0.3888888888888889,
+        "balanced_accuracy": 0.3333333333333333,
+        "precision_macro": 0.12962962962962962,
+        "recall_macro": 0.3333333333333333,
+        "f1_macro": 0.18666666666666668,
+        "log_loss": 1.0900217757972093,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            10,
+            0
+          ]
+        ],
+        "roc_auc": 0.5
+      },
+      "test": {
+        "accuracy": 0.3888888888888889,
+        "balanced_accuracy": 0.3333333333333333,
+        "precision_macro": 0.12962962962962962,
+        "recall_macro": 0.3333333333333333,
+        "f1_macro": 0.18666666666666668,
+        "log_loss": 1.0900217757972093,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            10,
+            0
+          ]
+        ],
+        "roc_auc": 0.5
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 1.4778,
+        "p95_ms": 1.7173699999999998,
+        "samples_ms": [
+          1.4413,
+          1.5098,
+          1.7775,
+          1.4499,
+          1.4805,
+          1.6806,
+          1.6916,
+          1.4778,
+          1.4395,
+          1.6573,
+          1.4412,
+          1.3261,
+          1.2767,
+          1.2938,
+          1.5098
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    },
+    "logistic_regression": {
+      "fit_seconds": 0.009281499980716035,
+      "estimator_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "fit_warnings": [],
+      "validation": {
+        "accuracy": 0.9722222222222222,
+        "balanced_accuracy": 0.9761904761904763,
+        "precision_macro": 0.9743589743589745,
+        "recall_macro": 0.9761904761904763,
+        "f1_macro": 0.974320987654321,
+        "log_loss": 0.08530785748128573,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            1,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ],
+        "roc_auc": 1.0
+      },
+      "test": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "log_loss": 0.06870719096480167,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ],
+        "roc_auc": 1.0
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 1.492,
+        "p95_ms": 1.80546,
+        "samples_ms": [
+          1.492,
+          1.7895,
+          1.6145,
+          1.5641,
+          1.5794,
+          1.8427,
+          1.4843,
+          1.3788,
+          1.3641,
+          1.6266,
+          1.4327,
+          1.4111,
+          1.4613,
+          1.366,
+          1.4959
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    },
+    "random_forest": {
+      "fit_seconds": 0.11172149999765679,
+      "estimator_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 150,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "fit_warnings": [],
+      "validation": {
+        "accuracy": 0.9722222222222222,
+        "balanced_accuracy": 0.9761904761904763,
+        "precision_macro": 0.9696969696969697,
+        "recall_macro": 0.9761904761904763,
+        "f1_macro": 0.9717813051146384,
+        "log_loss": 0.17172119294972268,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            13,
+            1
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ],
+        "roc_auc": 1.0
+      },
+      "test": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "log_loss": 0.15142502318439824,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ],
+        "roc_auc": 1.0
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 7.0637,
+        "p95_ms": 7.3693599999999995,
+        "samples_ms": [
+          7.2374,
+          6.669,
+          6.3785,
+          6.9819,
+          7.3618,
+          7.1043,
+          6.698,
+          6.3315,
+          7.0637,
+          7.387,
+          7.2213,
+          6.4646,
+          6.3031,
+          7.161,
+          7.3354
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    }
+  },
+  "model_sha256": "42c15c9df1b8f9b51cc9042dbfd7beafbbdd627c959768681a6ffa554716c674"
+}

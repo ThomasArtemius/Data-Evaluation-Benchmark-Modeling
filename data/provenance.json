@@ -1,0 +1,57 @@
+{
+  "wine": {
+    "url": "https://archive.ics.uci.edu/static/public/109/wine.zip",
+    "member": "wine.data",
+    "doi": "https://doi.org/10.24432/C5PC7J",
+    "citation": "Aeberhard, S. & Forina, M. (1992). Wine. UCI Machine Learning Repository.",
+    "columns": [
+      "cultivar",
+      "alcohol",
+      "malic_acid",
+      "ash",
+      "alcalinity_of_ash",
+      "magnesium",
+      "total_phenols",
+      "flavanoids",
+      "nonflavanoid_phenols",
+      "proanthocyanins",
+      "color_intensity",
+      "hue",
+      "od280_od315",
+      "proline"
+    ],
+    "rows": 178,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved_utc": "2026-11-03T07:32:11.677065+00:00",
+    "archive_sha256": "2bae62c4481220623579d4c4fb36b55652b6b75e06e49fa1981b8198362dfdab",
+    "original_data_sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+    "csv_sha256": "37bd5405ab7376ceaccac7f0727e883a262c4f2e525fb4ee351fdbe269aa0e7e",
+    "modifications": "Added descriptive column headers and stable zero-based row IDs; original values retained."
+  },
+  "abalone": {
+    "url": "https://archive.ics.uci.edu/static/public/1/abalone.zip",
+    "member": "abalone.data",
+    "doi": "https://doi.org/10.24432/C55C7W",
+    "citation": "Nash, W., Sellers, T., Talbot, S., Cawthorn, A., & Ford, W. (1994). Abalone. UCI Machine Learning Repository.",
+    "columns": [
+      "sex",
+      "length",
+      "diameter",
+      "height",
+      "whole_weight",
+      "shucked_weight",
+      "viscera_weight",
+      "shell_weight",
+      "rings"
+    ],
+    "rows": 4177,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved_utc": "2026-11-03T07:32:12.877583+00:00",
+    "archive_sha256": "755a6a67c5b266961a3f149ea13be2cfb6e6c727e48cee3c83bc0b4526210ee4",
+    "original_data_sha256": "de37cdcdcaaa50c309d514f248f7c2302a5f1f88c168905eba23fe2fbc78449f",
+    "csv_sha256": "3a1d1de79a15eb96a94045403c1fa4ff186fe128ab0b92d7f1cb04f8184ad5a1",
+    "modifications": "Added descriptive column headers and stable zero-based row IDs; original values retained."
+  }
+}

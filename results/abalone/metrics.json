@@ -1,0 +1,220 @@
+{
+  "started_utc": "2026-11-03T07:41:56.647294+00:00",
+  "finished_utc": "2026-11-03T07:41:58.070179+00:00",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "device": "CPU",
+    "threads": 1,
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "input_sha256": "3a1d1de79a15eb96a94045403c1fa4ff186fe128ab0b92d7f1cb04f8184ad5a1",
+  "input_filename": "abalone.csv",
+  "rows": 4177,
+  "schema": {
+    "features": [
+      "sex",
+      "length",
+      "diameter",
+      "height",
+      "whole_weight",
+      "shucked_weight",
+      "viscera_weight",
+      "shell_weight"
+    ],
+    "numeric": [
+      "length",
+      "diameter",
+      "height",
+      "whole_weight",
+      "shucked_weight",
+      "viscera_weight",
+      "shell_weight"
+    ],
+    "categorical": [
+      "sex"
+    ],
+    "target": "rings",
+    "id_column": "row_id"
+  },
+  "task": "regression",
+  "seed": 42,
+  "split_counts": {
+    "train": 2505,
+    "validation": 836,
+    "test": 836
+  },
+  "selected_model": "random_forest",
+  "selection": {
+    "split": "validation",
+    "metric": "rmse",
+    "direction": "minimize",
+    "tie_break": "candidate registry order; simpler baseline first",
+    "refit_after_selection": false
+  },
+  "probability_columns": {},
+  "missing_feature_values": 0,
+  "models": {
+    "dummy_mean": {
+      "fit_seconds": 0.05569219999597408,
+      "estimator_parameters": {
+        "constant": null,
+        "quantile": null,
+        "strategy": "mean"
+      },
+      "fit_warnings": [],
+      "validation": {
+        "mae": 2.463491676933215,
+        "rmse": 3.350127518821077,
+        "r2": -0.000852654960355137
+      },
+      "test": {
+        "mae": 2.384594447468699,
+        "rmse": 3.290307362584377,
+        "r2": -8.429348858407515e-05
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 2.5881,
+        "p95_ms": 3.1654099999999996,
+        "samples_ms": [
+          2.7478,
+          2.5881,
+          3.0351,
+          2.5728,
+          2.3214,
+          2.418,
+          2.5573,
+          3.1127,
+          2.9698,
+          2.4059,
+          2.4971,
+          2.6143,
+          2.2805,
+          3.2884,
+          2.8484
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    },
+    "ridge": {
+      "fit_seconds": 0.007145100011257455,
+      "estimator_parameters": {
+        "alpha": 10.0,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      },
+      "fit_warnings": [],
+      "validation": {
+        "mae": 1.6473528212982116,
+        "rmse": 2.2722152819091277,
+        "r2": 0.539588225400571
+      },
+      "test": {
+        "mae": 1.5992189488175472,
+        "rmse": 2.217827385725761,
+        "r2": 0.545620057978116
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 2.6525,
+        "p95_ms": 3.16368,
+        "samples_ms": [
+          2.605,
+          2.5542,
+          2.6941,
+          2.5653,
+          2.6565,
+          2.7176,
+          2.6525,
+          2.772,
+          2.5084,
+          2.8238,
+          3.1215,
+          3.2621,
+          2.5783,
+          2.3669,
+          2.4033
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    },
+    "random_forest": {
+      "fit_seconds": 0.7868655000056606,
+      "estimator_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 150,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "fit_warnings": [],
+      "validation": {
+        "mae": 1.598642414403778,
+        "rmse": 2.2465686236208615,
+        "r2": 0.5499229718843108
+      },
+      "test": {
+        "mae": 1.5544750187567176,
+        "rmse": 2.209198859237528,
+        "r2": 0.5491487389975152
+      },
+      "latency": {
+        "batch_rows": 32,
+        "warmup_calls": 3,
+        "repeats": 15,
+        "median_ms": 10.7164,
+        "p95_ms": 12.423499999999999,
+        "samples_ms": [
+          10.7246,
+          13.2005,
+          12.0905,
+          10.7514,
+          10.7164,
+          10.6459,
+          11.0127,
+          10.3833,
+          11.6995,
+          10.9698,
+          10.6388,
+          10.1506,
+          10.3088,
+          10.3627,
+          10.7066
+        ],
+        "scope": "In-process Pipeline.predict, including fitted preprocessing; excludes CSV I/O, schema casting, model loading and predict_proba. One CPU thread; sequential calls."
+      }
+    }
+  },
+  "model_sha256": "4d000af01eb0faed1c5a7f849ecc01bf30b2fa1b70aabda9d09e342011c1f426"
+}

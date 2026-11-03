@@ -1,0 +1,22 @@
+# Local environments and interpreter/test caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# New experiments and disposable work; canonical results/ stays tracked
+runs/
+data-redownloaded/
+tmp/
+*.log
+
+# Local credentials and editor state
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

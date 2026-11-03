@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "verification_date_local": "2026-11-03",
+  "timezone": "Asia/Jakarta",
+  "evidence_kind": "Author-run checks; independent AI review not yet performed",
+  "working_directory": "outputs/brief-benchmark",
+  "tests": {
+    "command": "python -B -m pytest -q -x -p no:cacheprovider --basetemp ../../work/brief-benchmark/tmp/qa-tests",
+    "setup": "Created the task-local temporary parent before running pytest; temporary fixtures recycled after verification.",
+    "observed_summary": "30 passed in 18.07s",
+    "passed": 30,
+    "failed": 0,
+    "scope": "Synthetic fixtures exercise classification, regression, fresh-process CLI, split auditing, repeatability, CSV edge cases, train-only preprocessing, validation-only model selection and output protection."
+  },
+  "delivered_workflow": {
+    "command": "python -B verify_submission.py",
+    "exit_code": 0,
+    "result": {
+      "status": "passed",
+      "checks": [
+        {
+          "dataset": "wine",
+          "rows": 178,
+          "heldout_predictions_verified": 36,
+          "input_and_model_hashes_match": true,
+          "split_and_source_rows_match": true,
+          "fresh_process_predictions_match": true,
+          "metrics_recomputed": {
+            "accuracy": 1,
+            "f1_macro": 1
+          }
+        },
+        {
+          "dataset": "abalone",
+          "rows": 4177,
+          "heldout_predictions_verified": 836,
+          "input_and_model_hashes_match": true,
+          "split_and_source_rows_match": true,
+          "fresh_process_predictions_match": true,
+          "metrics_recomputed": {
+            "mae": 1.5544750187567176,
+            "rmse": 2.209198859237528,
+            "r2": 0.5491487389975152
+          }
+        }
+      ],
+      "scope": "Author-run reproducibility verification, not an independent AI review or reviewer inference benchmark."
+    }
+  },
+  "full_dataset_repeatability": {
+    "observed": "Repeated both full benchmarks with the same seed. All six candidates' validation/test metric dictionaries and both selected models matched the preceding run exactly.",
+    "timing": "Timing samples are measured separately and are not expected to match."
+  },
+  "reviewer_inference": {
+    "measured": false,
+    "reviewer_model": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "peak_vram_mib": null,
+    "note": "Record during the independent review; tabular-model timing is not LLM reviewer cost."
+  },
+  "limitations": [
+    "No independent review or instructor acceptance yet.",
+    "No hosted deployment, concurrent student/internal load test or GPU sizing conclusion.",
+    "No clean-environment reinstall was performed; exact installed package versions are pinned.",
+    "Public dataset results and synthetic edge-case tests do not establish performance on all future datasets."
+  ]
+}
